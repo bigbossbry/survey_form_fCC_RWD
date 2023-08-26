@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>freeCodeCamp Survey Form Project</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title">freeCodeCamp Survey Form</h1>
+            <p id="description">A freeCodeCamp Project Submission</p>
+        </header>
+        <form action="#" id="survey-form">
+            <div class="labelContainer">
+                <label for="name" id="name-label"> Name</label>
+                <input type="text" name="name" id="name">
+            </div>
+            <div class="labelContainer">
+                <label for="email" id="email-label">Email</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div class="labelContainer">
+                <label for="number">Number</label>
+                <input type="number" name="number" id="number" min="" max="">
+            </div>
+            <div class="labelContainer">
+                <label for="dropdown">Is this a good form?</label>
+                <select name="dropdown" id="dropdown">
+                    <option value="" disabled selected hidden>Choose an Option</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                    <option value="maybe">Maybe</option>
+                </select>
+            </div>
+            <div class="labelContainer">
+                <label class="radioLabel">Yes
+                    <input type="radio" name="radio" id="radio1">
+                </label>
+                <label class="radioLabel">No
+                    <input type="radio" name="radio" id="radio2">
+                </label>
+            </div>
+            <div class="labelContainer">
+                <p>Here are a few checkbox input items</p>
+                <label>Please
+                    <input type="checkbox" value ="please" name="please" id="please">
+                </label>
+                <label>Select
+                    <input type="checkbox" value ="select" name="select" id="select">
+                </label>
+                <label>All
+                    <input type="checkbox" value ="all" name="all" id="all">
+                </label>
+                <label>Checkboxes
+                    <input type="checkbox" value ="checboxes" name="checboxes" id="checboxes">
+                </label>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
