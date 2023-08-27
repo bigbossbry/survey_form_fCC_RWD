@@ -15,15 +15,15 @@
         <form action="#" id="survey-form">
             <div class="labelContainer">
                 <label for="name" id="name-label"> Name</label>
-                <input type="text" name="name" id="name">
+                <input type="text" name="name" id="name" required placeholder="Name">
             </div>
             <div class="labelContainer">
                 <label for="email" id="email-label">Email</label>
-                <input type="email" name="email" id="email">
+                <input type="email" name="email" id="email" required placeholder="Email">
             </div>
             <div class="labelContainer">
-                <label for="number">Number</label>
-                <input type="number" name="number" id="number" min="" max="">
+                <label for="number" id="number-label">Number</label>
+                <input type="number" name="number" id="number" min="10" max="120" placeholder="Age">
             </div>
             <div class="labelContainer">
                 <label for="dropdown">Is this a good form?</label>
@@ -36,10 +36,10 @@
             </div>
             <div class="labelContainer">
                 <label class="radioLabel">Yes
-                    <input type="radio" name="radio" id="radio1">
+                    <input type="radio" name="radio" id="radio1" value="yes">
                 </label>
                 <label class="radioLabel">No
-                    <input type="radio" name="radio" id="radio2">
+                    <input type="radio" name="radio" id="radio2" value="no">
                 </label>
             </div>
             <div class="labelContainer">
@@ -56,6 +56,14 @@
                 <label>Checkboxes
                     <input type="checkbox" value ="checboxes" name="checboxes" id="checboxes">
                 </label>
+            </div>
+            <div class="labelContainer">
+                <label for="story">Write a two sentence horror story</label>
+                <textarea name="story" id="story" cols="30" rows="10">
+                </textarea>
+            </div>
+            <div class="buttonContainer">
+                <button type="submit" id="submit">Submit</button>
             </div>
         </form>
     </div>
